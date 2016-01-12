@@ -1,6 +1,7 @@
 (function() {
   angular
-  .module('bibimbap_app', [
+  .module('bibimbap', [
+    "ui.router",
     "ingredients"
   ])
   .config([
@@ -13,11 +14,10 @@
     $stateProvider
     .state("ingredientsIndex", {
       url: "/ingredients",
-      templateUrl: "js/ingredients/index.html"
+      templateUrl: "js/ingredients/index.html",
       controller: "IngredientIndexController",
       controllerAs: "IngredientIndexViewModel"
     })
-    .
   }
 
 })();

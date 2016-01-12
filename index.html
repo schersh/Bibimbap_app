@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bibimbap_app">
+<html lang="en" ng-app="bibimbap">
   <head>
     <title>Bibimbap App</title>
     <!-- library scripts -->
@@ -9,11 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.0.9/angular-cookie.js"></script>
     <!-- my scripts -->
+    <script src="js/app.js"></script>
     <script src="js/ingredients/index.controller.js"></script>
     <script src="js/ingredients/ingredients.js"></script>
-    <script src="js/app.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <base href="/">
   </head>
   <body>
     <!-- <div id="cover"></div> -->
@@ -24,8 +25,8 @@
     <div class="recipe-grid">
       <img src="css/img/rice.png" alt="rice bowl" id="bowl">
     </div>
-    <div ng-controller='ingredientsController as ingredientsViewModel'>
-      <p>{{ingredientsViewModel.veg[0]}}</p>
+    <div ng-controller='IngredientsIndexController as IngredientsIndexViewModel'>
+      <p>{{IngredientsIndexViewModel.veg[0]}}</p>
     </div>
     <h3><a data-ui-sref="ingredientsIndex">View all ingredients and add your own</a><h3>
     <main data-ui-view></main>

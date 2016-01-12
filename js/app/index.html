@@ -1,0 +1,6 @@
+<h1>Rice Bowl Ingregients</h1>
+<p><a data-ui-sref="recipeNew">Add Your Own Ingredients</a><p>
+
+<div data-ng-repeat="ingredient in IngredientIndexViewModel.veg | orderBy:'-created_at'">
+  <div data-song-show data-song="song"></div>
+</div>
