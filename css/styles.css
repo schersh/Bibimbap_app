@@ -10,7 +10,7 @@
   padding: 0;
   margin: 0 auto;
   left: 0;
-  /*background-image: url(img/.jpg);*/
+  background-image: url(img/rice_uncooked.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,7 +20,21 @@
   position: static;
 }
 
-
+.recipe-grid {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 3px solid #7A7A7A;
+  padding: 1.5px;
+}
 body {
   font-family: sans-serif;
   font-size: 30px;
@@ -39,12 +53,12 @@ h1 {
   text-align: center;
 }
 h3 {
-  color: orange;
+  color: grey;
   font-size: 15px;
   font-style: italic;
 }
 a {
-  font-size: 20px;
+  font-size: 15px;
   color: orange;
 }
 p {
@@ -61,9 +75,14 @@ button {
   padding: 0.5em;
 }
 
+#bowl {
+  max-width: 200px;
+  max-height: 200px;
+}
+/*TODO add the class that triggers animation for bowl to spin while recipe is being fetched*/
 
 img {
-  width: 200px;
+  max-width: 200px;
   padding: 1%;
 }
 

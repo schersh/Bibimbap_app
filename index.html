@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html data-ng-app="bibimbap_app">
+<html lang="en" ng-app="bibimbap_app">
   <head>
     <title>Bibimbap App</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- library scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.0.9/angular-cookie.js"></script>
-
+    <!-- my scripts -->
+    <script src="js/ingredients/index.controller.js"></script>
+    <script src="js/ingredients/ingredients.js"></script>
     <script src="js/app.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <div id="cover"></div>
-    <h1>Bibimbap App</h1>
-    <div class="recipe"></div>
-    <h3><a data-ui-sref="songIndex">Add Your Own Ingredients</a><h3>
+    <!-- <div id="cover"></div> -->
+    <div class="bodyText">
+      <h1>Bibimbap App</h1>
+      <h3>Not sure what to make for dinner? Use this recipe generator to create a balanced rice bowl. Disclaimer - these recipes are based on the idea of a Korean bibimbap bowl, but are no means traditional. If you'd like to make a more classic bibimbap, I recommend you check out <a href="http://mykoreankitchen.com/2013/07/12/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/">this recipe</a> from the blog, My Korean Kitchen.</h3>
+    <div>
+    <div class="recipe-grid">
+      <img src="css/img/rice.png" alt="rice bowl" id="bowl">
+    </div>
+    <div ng-controller='ingredientsController as ingredientsViewModel'>
+      <p>{{ingredientsViewModel.veg[0]}}</p>
+    </div>
+    <h3><a data-ui-sref="ingredientsIndex">View all ingredients and add your own</a><h3>
     <main data-ui-view></main>
 
   </body>
