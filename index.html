@@ -23,9 +23,9 @@
     <h3>Not sure what to make for dinner? Use this recipe generator to create a balanced rice bowl.</h3>
     <h3>These recipes are based on the idea of a Korean bibimbap bowl, but are no means traditional. If you'd like to make a more classic bibimbap, I recommend you check out <a href="http://mykoreankitchen.com/2013/07/12/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/">this recipe</a> from the blog, My Korean Kitchen.</h3>
     <nav>
-      <div ng-controller='ingredientsController as ingredientsViewModel'>
+      <div ng-controller='IngredientsIndexController as IngredientsIndexViewModel'>
         <button ng-click="spinBowl()">Get Recipe</button>
-            <!-- <p>{{ingredientsViewModel.veg[0]}}</p> -->
+            <p></p>
         <button ng-click="ingredientsIndex">View all ingredients</button>
       </div>
     <nav>
@@ -33,11 +33,13 @@
       <img src="css/img/rice.png" alt="rice bowl" id="bowl">
     </div>
     <div class="recipe-view">
-      <h3>My Rice Bowl</h3>
-      <div ng-controller="ingredientsController as ingredientsViewModel">
-      <ul>
-        <li>
-      </ul>
+      <div ng-controller="IngredientsIndexController as IngredientsIndexViewModel">
+        <div ng-show="IngredientsIndexViewModel.recipeIsVisible">
+        <h3>My Rice Bowl</h3>
+        <ul>
+          <li>{{IngredientIndexViewModel.veg[0]}}</li>
+        </ul>
+        </div>
       </div>
     </div>
   </div>

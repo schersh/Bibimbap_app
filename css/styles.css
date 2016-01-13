@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-#cover {
+/*#cover {
   height: 300px;
   max-width: 100%;
   padding: 0;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   position: static;
-}
+}*/
 
 .recipe-grid {
   background-color: orange;
@@ -30,11 +30,10 @@
   min-width: 400px;
   max-width: 400px;
   border-radius: 100%;
-  /*margin-left: 30%;
-  margin-right: 30%;*/
   border: 3px solid #7A7A7A;
-  padding: 1.5px;
+  padding: 1em;
   float: left;
+  margin: 0.5em;
 }
 
 .recipe-view {
@@ -48,6 +47,8 @@
   background-size: 100% 1.2em;
   font-size: 15px;
   float: right;
+  padding: 1em;
+  margin: 0.5em;
 }
 
 body {
@@ -60,6 +61,8 @@ body {
 
 nav {
   text-align: center;
+  display: flex;
+  align-items: center;
   width: 100%;
   margin: 5px;
 }

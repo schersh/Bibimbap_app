@@ -39,6 +39,15 @@
     ];
     this.showRecipe = function(){
       // toggle class to show div on index.html which will display ul li of recipe obj
+      this.recipeIsVisible = false
+      this.toggleView = function(){
+        if(this.recipeIsVisible){
+          this.recipeIsVisible = false
+        }
+        else{
+          this.recipeIsVisible = true
+        }
+      }
     };
     this.spinBowl = function(){
       console.log('spinning bowl')
@@ -46,7 +55,9 @@
       // set timeout
       // remove class
       // create new recipe obj with randomly selected ingredients
+      // return recipe
       // call show recipe function(recipe obj)
+      // showRecipe(recipe);
     };
 
   }
