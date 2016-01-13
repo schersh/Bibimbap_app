@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="bibimbap">
-  <head>
-    <title>Bibimbap App</title>
-    <!-- library scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.0.9/angular-cookie.js"></script>
-    <!-- my scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/ingredients/index.controller.js"></script>
-    <script src="js/ingredients/ingredients.js"></script>
+<head>
+  <title>Bibimbap App</title>
+  <!-- library scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.0.9/angular-cookie.js"></script>
+  <!-- my scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/ingredients/ingredients.js"></script>
+  <script src="js/ingredients/index.controller.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <base href="/">
-  </head>
-  <body>
-    <!-- <div id="cover"></div> -->
-    <div class="bodyText">
-      <h1>Bibimbap App</h1>
-      <h3>Not sure what to make for dinner? Use this recipe generator to create a balanced rice bowl. Disclaimer - these recipes are based on the idea of a Korean bibimbap bowl, but are no means traditional. If you'd like to make a more classic bibimbap, I recommend you check out <a href="http://mykoreankitchen.com/2013/07/12/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/">this recipe</a> from the blog, My Korean Kitchen.</h3>
-    <div>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <base href="/">
+</head>
+<body>
+  <!-- <div id="cover"></div> -->
+  <div class="bodyText">
+    <h1>Bibimbap App</h1>
+    <h3>Not sure what to make for dinner? Use this recipe generator to create a balanced rice bowl.</h3>
+    <h3>These recipes are based on the idea of a Korean bibimbap bowl, but are no means traditional. If you'd like to make a more classic bibimbap, I recommend you check out <a href="http://mykoreankitchen.com/2013/07/12/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/">this recipe</a> from the blog, My Korean Kitchen.</h3>
+    <nav>
+      <div ng-controller='ingredientsController as ingredientsViewModel'>
+        <button ng-click="spinBowl()">Get Recipe</button>
+            <!-- <p>{{ingredientsViewModel.veg[0]}}</p> -->
+        <button ng-click="ingredientsIndex">View all ingredients</button>
+      </div>
+    <nav>
     <div class="recipe-grid">
       <img src="css/img/rice.png" alt="rice bowl" id="bowl">
     </div>
-    <div ng-controller='IngredientsIndexController as IngredientsIndexViewModel'>
-      <p>{{IngredientsIndexViewModel.veg[0]}}</p>
+    <div class="recipe-view">
+      <h3>My Rice Bowl</h3>
+      <div ng-controller="ingredientsController as ingredientsViewModel">
+      <ul>
+        <li>
+      </ul>
+      </div>
     </div>
-    <h3><a data-ui-sref="ingredientsIndex">View all ingredients and add your own</a><h3>
-    <main data-ui-view></main>
+  </div>
 
-  </body>
+  <main data-ui-view></main>
+
+</body>
 </html>

@@ -30,11 +30,26 @@
   min-width: 400px;
   max-width: 400px;
   border-radius: 100%;
-  margin-left: 30%;
-  margin-right: 30%;
+  /*margin-left: 30%;
+  margin-right: 30%;*/
   border: 3px solid #7A7A7A;
   padding: 1.5px;
+  float: left;
 }
+
+.recipe-view {
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  background-image:
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  font-size: 15px;
+  float: right;
+}
+
 body {
   font-family: sans-serif;
   font-size: 30px;
@@ -43,9 +58,18 @@ body {
   padding: 0
 }
 
+nav {
+  text-align: center;
+  width: 100%;
+  margin: 5px;
+}
+
 .bodyText {
   padding: 5%;
+  margin: 5%;
   font-family: sans-serif;
+  clear: both;
+  margin-bottom: 400px;
 }
 
 h1 {
@@ -54,6 +78,7 @@ h1 {
 }
 h3 {
   color: grey;
+  text-align: center;
   font-size: 15px;
   font-style: italic;
 }
@@ -73,6 +98,7 @@ button {
   color: #ffffff;
   font-weight: bold;
   padding: 0.5em;
+  display: inline-block;
 }
 
 #bowl {
@@ -92,6 +118,5 @@ input, textarea {
 }
 
 input, textarea, button {
-  display: block;
   margin-bottom: 1em;
 }
