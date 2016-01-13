@@ -1,21 +1,21 @@
 "use strict";
 
-(function(){
+// (function(){
   angular
   .module("ingredients")
   .controller("IngredientIndexController", [
-    "ControllerFunction"
+    ControllerFunction
   ]);
 
   function ControllerFunction(){
-    this.grain = [
+    var grain = [
       "Wild Rice",
       "Basmati Rice",
       "Quinoa",
       "Couscous",
       "Bulgur"
     ];
-    this.protein = [
+    var protein = [
       "Fried Egg",
       "Tofu",
       "Shredded Chicken",
@@ -23,42 +23,47 @@
       "Roasted Cashews",
       "Roasted Chickpeas"
     ];
-    this.veg = [
-      "Shiitake Mushrooms",
+    var veg = [
+      "Fresh Cucumber",
       "Shredded Carrots",
-      "Seasoned Spinach",
       "Bean Sprouts",
-      "Radishes"
+      "Radishes",
+      "Snow Peas"
     ];
-    this.sauce = [
-      "Sesame oil, sugar, apple cider vinegar, minced garlic, gochujang (Korean chili paste)",
-      "Brown sugar, soy sauce, ginger",
-      "Lemon juice, olive oil, soy sauce, sesame seeds",
-      "Rice vinegar, soy sauce, olive oil",
-      "Honey, dijon mustard, olive oil, red pepper flakes"
+    var veg2 = [
+      "Roasted Brussel Sprouts",
+      "Shiitake Mushrooms",
+      "Wilted Spinach",
+      "Roasted Red Peppers"
+    ]
+    var sauce = [
+      "Sauce: Sesame oil, sugar, apple cider vinegar, minced garlic, gochujang (Korean chili paste)",
+      "Sauce: Brown sugar, soy sauce, ginger",
+      "Sauce: Lemon juice, olive oil, soy sauce, sesame seeds",
+      "Sauce: Rice vinegar, soy sauce, olive oil",
+      "Sauce: Honey, dijon mustard, olive oil, red pepper flakes"
     ];
-    this.showRecipe = function(){
+    var getRecipe = function(){
       // toggle class to show div on index.html which will display ul li of recipe obj
-      this.recipeIsVisible = false
-      this.toggleView = function(){
-        if(this.recipeIsVisible){
-          this.recipeIsVisible = false
-        }
-        else{
-          this.recipeIsVisible = true
-        }
-      }
+      return {
+        grain: grain[Math.floor(Math.random() * grain.length)],
+        veg: veg[[Math.floor(Math.random() * veg.length)]],
+        veg2: veg2[[Math.floor(Math.random() * veg2.length)]],
+        protein: protein[Math.floor(Math.random() * protein.length)],
+        sauce: sauce[Math.floor(Math.random() * sauce.length)]
+      };
     };
     this.spinBowl = function(){
       console.log('spinning bowl')
       // toggle class to activate css transitions
       // set timeout
       // remove class
-      // create new recipe obj with randomly selected ingredients
-      // return recipe
+      // create new recipe obj with randomly selected ingredients recipe[]
+      this.recipeIsVisible = true
+      this.recipe = getRecipe()
+      // console.log(getRecipe())
       // call show recipe function(recipe obj)
-      // showRecipe(recipe);
-    };
 
+    };
   }
-})();
+// })();

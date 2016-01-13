@@ -1,3 +1,13 @@
-<h1>Rice Bowl Ingregients</h1>
+<h2>Rice Bowl Ingredients</h2>
 
-<p><a data-ui-sref="recipeNew">Add Your Own Ingredients</a><p>
+<div data-ng-repeat="ingredient in IngredientIndexViewModel.veg">
+<ul>
+  <li>{{IngredientIndexViewModel.veg}}</li>
+  <!-- <li>{{IngredientIndexViewModel.recipe.veg}}</li>
+  <li>{{IngredientIndexViewModel.recipe.veg2}}</li>
+  <li>{{IngredientIndexViewModel.recipe.protein}}</li>
+  <li>{{IngredientIndexViewModel.recipe.sauce}}</li> -->
+</ul>
+</div>
+
+<button><a data-ui-sref="ingredientsNew">Add a New Ingredient</a></button>

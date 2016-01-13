@@ -3,8 +3,8 @@
   justify-content: center;
   text-decoration: none;
 }
-
-/*#cover {
+/*
+#cover {
   height: 300px;
   max-width: 100%;
   padding: 0;
@@ -79,15 +79,29 @@ h1 {
   color: orange;
   text-align: center;
 }
+h2 {
+  color: orange;
+  text-align: center;
+  font-size: 30px;
+}
 h3 {
   color: grey;
   text-align: center;
   font-size: 15px;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 a {
   font-size: 15px;
   color: orange;
+}
+button a{
+  border: none;
+  background-color: orange;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
 }
 p {
   font-family: sans-serif;
@@ -102,6 +116,8 @@ button {
   font-weight: bold;
   padding: 0.5em;
   display: inline-block;
+  margin: 10px;
+  font-size: 12px;
 }
 
 #bowl {
