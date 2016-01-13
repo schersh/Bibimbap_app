@@ -7,25 +7,28 @@
     "$firebaseArray",
     ControllerFunction
   ]);
-
+  function(){
+    var firebaseUrl = "https://glowing-inferno-3070.firebaseio.com/#-K7wbvhYToUW8nxWZvbo|6eeab6341889788cf8978b76035d8fe4"
+  }
   function ControllerFunction(){
     var grain = [
       "Wild Rice",
       "Basmati Rice",
       "Quinoa",
       "Couscous",
-      "Bulgur"
+      "Bulgur",
+      "Farro"
     ];
     var protein = [
-      "Fried Egg",
-      "Tofu",
+      "Fried or soft-boiled Egg",
+      "Tofu (marinated or grilled)",
       "Shredded Chicken",
       "Minced Beef",
       "Roasted Cashews",
       "Roasted Chickpeas"
     ];
     var veg = [
-      "Fresh Cucumber",
+      "Shredded Cucumber",
       "Shredded Carrots",
       "Bean Sprouts",
       "Radishes",
@@ -33,8 +36,9 @@
     ];
     var veg2 = [
       "Roasted Brussel Sprouts",
+      "Roasted Sweet Potato"
       "Shiitake Mushrooms",
-      "Wilted Spinach",
+      "Spinach (wilted)",
       "Roasted Red Peppers"
     ]
     var sauce = [
