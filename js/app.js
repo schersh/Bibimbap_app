@@ -2,6 +2,7 @@
   angular
   .module('bibimbap', [
     "ui.router",
+    "firebase",
     "ingredients"
   ])
   .config([

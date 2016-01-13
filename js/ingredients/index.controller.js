@@ -4,6 +4,7 @@
   angular
   .module("ingredients")
   .controller("IngredientIndexController", [
+    "$firebaseArray",
     ControllerFunction
   ]);
 
@@ -54,16 +55,11 @@
       };
     };
     this.spinBowl = function(){
-      console.log('spinning bowl')
       // toggle class to activate css transitions
       // set timeout
       // remove class
-      // create new recipe obj with randomly selected ingredients recipe[]
       this.recipeIsVisible = true
       this.recipe = getRecipe()
-      // console.log(getRecipe())
-      // call show recipe function(recipe obj)
-
     };
   }
 // })();
