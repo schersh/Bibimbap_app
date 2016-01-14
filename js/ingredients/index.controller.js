@@ -6,7 +6,7 @@
   .controller("IngredientIndexController", [
     ControllerFunction
   ]);
-  
+
   function ControllerFunction(){
     var grain = [
       "Wild Rice",
@@ -33,11 +33,11 @@
     ];
     var veg2 = [
       "Roasted Brussel Sprouts",
-      "Roasted Sweet Potato"
+      "Roasted Sweet Potato",
       "Shiitake Mushrooms",
       "Spinach (wilted)",
       "Roasted Red Peppers"
-    ]
+    ];
     var sauce = [
       "Sauce: Sesame oil, sugar, apple cider vinegar, minced garlic, gochujang (Korean chili paste)",
       "Sauce: Brown sugar, soy sauce, ginger",
