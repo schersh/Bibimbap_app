@@ -18,10 +18,6 @@
       controller: "IngredientIndexController",
       controllerAs: "IngredientIndexViewModel"
     });
-    .state("ingredientsNew", {
-      url: "/ingredients/new",
-      
-    })
   }
 
 })();
