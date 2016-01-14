@@ -1,16 +1,18 @@
 <h2>Rice Bowl Ingredients</h2>
 <div ng-controller='IngredientIndexController as IngredientIndexViewModel'>
+  <ul>
+    <li>Test</li>
+    <li>{{IngredientIndexViewModel.veg[0]}}</li>
+  </ul>
+
   <div data-ng-repeat="veg in IngredientIndexViewModel.veg">
+  </div>
+  <div data-ng-repeat="i in IngredientIndexViewModel.veg2">
     <ul>
-      <li>{{veg}}</li>
+      <li>{{IngredientIndexViewModel.veg2}}</li>
     </ul>
   </div>
-  <div data-ng-repeat="veg2 in IngredientIndexViewModel.veg2">
-    <ul>
-      <li>{{veg2}}</li>
-    </ul>
-  </div>
-  <div data-ng-repeat="grain in IngredientIndexViewModel.grain">
+  <!-- <div data-ng-repeat="grain in IngredientIndexViewModel.grain">
     <ul>
       <li>{{grain}}</li>
     </ul>
@@ -24,7 +26,6 @@
     <ul>
       <li>{{sauce}}</li>
     </ul>
-  </div>
+  </div> -->
 </div>
-
 <button><a data-ui-sref="ingredientsNew">Add a New Ingredient</a></button>

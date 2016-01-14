@@ -5,11 +5,10 @@
   .module("ingredients")
   .controller("IngredientIndexController", [
     "$firebaseArray",
+    "IngredientFactory",
     ControllerFunction
   ]);
-  function(){
-    var firebaseUrl = "https://glowing-inferno-3070.firebaseio.com/#-K7wbvhYToUW8nxWZvbo|6eeab6341889788cf8978b76035d8fe4"
-  }
+
   function ControllerFunction(){
     var grain = [
       "Wild Rice",
@@ -36,7 +35,7 @@
     ];
     var veg2 = [
       "Roasted Brussel Sprouts",
-      "Roasted Sweet Potato"
+      "Roasted Sweet Potato",
       "Shiitake Mushrooms",
       "Spinach (wilted)",
       "Roasted Red Peppers"
