@@ -4,12 +4,9 @@
   angular
   .module("ingredients")
   .controller("IngredientIndexController", [
-    "$firebaseArray",
     ControllerFunction
   ]);
-  function(){
-    var firebaseUrl = "https://glowing-inferno-3070.firebaseio.com/#-K7wbvhYToUW8nxWZvbo|6eeab6341889788cf8978b76035d8fe4"
-  }
+  
   function ControllerFunction(){
     var grain = [
       "Wild Rice",
