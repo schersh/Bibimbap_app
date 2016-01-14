@@ -17,6 +17,10 @@
       templateUrl: "js/ingredients/index.html",
       controller: "IngredientIndexController",
       controllerAs: "IngredientIndexViewModel"
+    });
+    .state("ingredientsNew", {
+      url: "/ingredients/new",
+      
     })
   }
 
