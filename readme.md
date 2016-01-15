@@ -12,7 +12,7 @@ Link to hosted app: http://schersh.github.io/Bibimbap_app/
 2. A user can enter and save their own ingredients to add more variety and flavors to the recipes.
 
 
-![app screenshot](/css/img/screenshot.png)
+![app screenshot](/css/img/screenshot1.png)
 
 
 ##Struggles/Unsolved Problems
