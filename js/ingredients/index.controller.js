@@ -4,7 +4,6 @@
   angular
   .module("ingredients")
   .controller("IngredientIndexController", [
-    "$firebaseArray",
     "IngredientFactory",
     ControllerFunction
   ]);
