@@ -62,5 +62,14 @@
       this.recipeIsVisible = true
       this.recipe = getRecipe()
     };
+    var getAllIngredients = function(){
+      return {
+        grain: grain[grain.all],
+        veg: veg[veg.all],
+        veg2: veg2[veg2.all],
+        protein: protein[protein.all],
+        sauce: sauce[sauce.all],
+      };
+    };
   }
 // })();
