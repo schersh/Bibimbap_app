@@ -72,9 +72,13 @@ nav {
 }
 
 h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 80px;
+  letter-spacing: 4px;
   color: orange;
   text-align: center;
 }
+
 h2 {
   color: orange;
   text-align: center;
