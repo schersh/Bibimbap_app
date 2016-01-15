@@ -17,11 +17,12 @@
       templateUrl: "js/ingredients/index.html",
       controller: "IngredientIndexController",
       controllerAs: "IngredientIndexViewModel"
-    });
+    })
     .state("ingredientsNew", {
       url: "/ingredients/new",
-      
-    })
-  }
-
+      templateUrl: "js/ingredients/new.html",
+      controller: "IngredientIndexController",
+      controllerAs: "IngredientIndexViewModel"
+    });
+  };
 })();
