@@ -2,7 +2,7 @@
 
 This application is my fourth project for General Assembly's Web Development Immersive course. This app is a rice bowl recipe generator, built with AngularJS and Firebase. I selected Angular as the front-end framework for this project, because I wanted to create an interactive single-page application. I chose Firebase for my database because I wanted something lightweight, and my dataset doesn't require any complex or structured relational modeling. I was curious to discover more about the difference between HTTP and Websockets technology, so using Firebase offered a great learning opportunity.
 
-Link to deployed app: http://schersh.github.io/Bibimbap_app/
+Link to hosted app: http://schersh.github.io/Bibimbap_app/
 
 ##User Stories:
 
