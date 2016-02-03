@@ -111,15 +111,15 @@ p {
   text-align: justify;
 }
 .circle {
-  width:100%;
+  width:80%;
   overflow: hidden;
   padding: 0;
   margin: 0;
-  display: table;
+  /*display: table;*/
   text-align:center;
   font-size: 11px;
   position:relative;
-  color: rgb(75.3, 75.3, 75.3, .7);
+  color: rgba(75.3, 75.3, 75.3, 0.6);
   font-family: Helvetica, sans-serif;
 }
 /*.circle:before{
