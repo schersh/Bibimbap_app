@@ -113,8 +113,8 @@ p {
 .circle {
   width:100%;
   display: table;
-  border-radius:50%;
-  text-align:center;
+  border-radius:100%;
+  text-align:justify;;
   font-size: 11px;
   position:relative;
   color: grey;
