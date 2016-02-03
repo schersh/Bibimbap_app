@@ -119,7 +119,7 @@ p {
   text-align:center;
   font-size: 11px;
   position:relative;
-  color: lightgrey;
+  color: rgb(75.3, 75.3, 75.3, .7);
   font-family: Helvetica, sans-serif;
 }
 /*.circle:before{
