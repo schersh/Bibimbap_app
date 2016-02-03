@@ -106,10 +106,26 @@ button a{
 }
 p {
   font-family: sans-serif;
-  font-size: 8px;
-  color: grey;
+  font-size: 11px;
   display: inline-block;
   text-align: justify;
+}
+.circle {
+  width:100%;
+  display: table;
+  border-radius:50%;
+  text-align:center;
+  font-size: 11px;
+  position:relative;
+  color: grey;
+  font-family: Helvetica, sans-serif;
+}
+.circle:before{
+  content:" ";
+  float:left;
+  height:0;
+  width:1px;
+  margin:100% 0 0;
 }
 
 button {
@@ -134,7 +150,6 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 70%;
 }
 /*
 .image_down {
