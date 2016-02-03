@@ -109,6 +109,7 @@ p {
   font-size: 8px;
   color: grey;
   display: inline-block;
+  text-align: justify;
 }
 
 button {
@@ -124,11 +125,16 @@ button {
 }
 
 #textpic {
-  max-width: 70%;
+  /*max-width: 70%;*/
   position: absolute;;
-  top: 50% auto;
-  bottom: 50% auto; 
-  /*max-height: 300px;*/
+  top: 50%;
+  bottom: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
 }
 /*
 .image_down {
