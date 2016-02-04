@@ -35,17 +35,18 @@
 #ricepic.spinner {
   animation: roll 1s 3;
   animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes roll {
   0% {
     transform: rotate(0);
-    margin-top: -46%;
+    margin-top: -47%;
     margin-left: -83%;
   }
   100% {
     transform: rotate(360deg);
-    margin-top: -46%;
+    margin-top: -47%;
     margin-left: -83%;
   }
 }
