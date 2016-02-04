@@ -125,11 +125,13 @@ button {
 }
 
 #ricepic {
-  /*max-width: 70%;*/
   position: absolute;;
   top: 50%;
   bottom: 50%;
-  width: 80%;
+  width: 350px;
+  height: 350px;
+  margin-top: -175px;
+  margin-bottom: -175px;
 }
 /*
 .image_down {
@@ -163,10 +165,6 @@ button {
     transform: rotate(270deg);
 }*/
 
-/*img {
-  max-width: 200px;
-  padding: 1%;
-}*/
 
 input, textarea {
   width: 20em;
