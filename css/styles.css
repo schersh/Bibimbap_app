@@ -27,8 +27,7 @@
   bottom: 50%;
   left: 50%;
   min-width: 250px;
-  max-width: 250px;
-  max-height: 250px;
+  max-height: 350px;
   min-height: 250px;
   transform: translate(-50%, -50%);
 }
