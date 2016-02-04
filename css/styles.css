@@ -34,29 +34,14 @@
 
 #ricepic.spinner {
   animation: roll 1s 3;
+  animation-fill-mode: both;
 }
 
 @keyframes roll {
   0% {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 52%;
-    min-width: 300px;
-    max-height: 380px;
-    min-height: 300px;
-    transform: translate(-50%, -50%);    
     transform: rotate(0);
   }
   100% {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 52%;
-    min-width: 300px;
-    max-height: 380px;
-    min-height: 300px;
-    transform: translate(-50%, -50%);    
     transform: rotate(360deg);
   }
 }
