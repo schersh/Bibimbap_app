@@ -38,7 +38,7 @@
 
 @keyframes roll {
   0% {
-    transform: rotate(0) translate(-50%, -50%);
+    transform: rotate(0);
   }
   100% {
     transform: rotate(360deg) translate(-50%, -50%);
