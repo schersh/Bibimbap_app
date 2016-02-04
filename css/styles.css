@@ -38,10 +38,12 @@
 
 @keyframes roll {
   0% {
-    transform: rotate(0) translate(-50%, -50%);
+    transform: rotate(0);
+    transform-origin: center;
   }
   100% {
     transform: rotate(360deg);
+    transform-origin: center;
   }
 }
 
