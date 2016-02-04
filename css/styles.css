@@ -128,8 +128,9 @@ button {
   position: absolute;;
   top: 50%;
   bottom: 50%;
-  width: 350px;
-  height: 350px;
+  left: 50%;
+  min-width: 350px;
+  min-height: 350px;
   margin-top: -175px;
   margin-bottom: -175px;
 }
