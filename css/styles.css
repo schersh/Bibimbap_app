@@ -127,9 +127,9 @@ button {
 #ricepic {
   /*max-width: 70%;*/
   position: absolute;;
-  /*top: 50%;
-  bottom: 50%;*/
-  width: 70%;
+  top: 50%;
+  bottom: 50%;
+  /*width: 70%;*/
 }
 /*
 .image_down {
