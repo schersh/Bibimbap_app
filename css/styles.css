@@ -40,13 +40,13 @@
 @keyframes roll {
   0% {
     transform: rotate(0);
-    margin-bottom: 190px;
-    margin-right: 150px;
+    margin-bottom: 380px;
+    margin-right: 300px;
   }
   100% {
     transform: rotate(360deg);
-    margin-bottom: 190px;
-    margin-right: 150px;
+    margin-bottom: 380px;
+    margin-right: 300px;
   }
 }
 
