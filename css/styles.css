@@ -25,14 +25,14 @@
   position: absolute;
   top: 50%;
   bottom: 50%;
-  left: 55%;
+  left: 52%;
   min-width: 300px;
   max-height: 380px;
   min-height: 300px;
   transform: translate(-50%, -50%);
 }
 
-.spinner {
+#ricepic.spinner {
   animation: roll 2s 2;
   transform: rotate(30deg);
 }
