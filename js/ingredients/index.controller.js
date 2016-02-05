@@ -1,9 +1,5 @@
 "use strict";
 
-$('button').click(function () {
-  $('#ricepic').toggleClass('spinner');
-});
-
 // (function(){
   angular
   .module("ingredients")
