@@ -45,7 +45,7 @@
       "Sauce: Rice vinegar, soy sauce, olive oil",
       "Sauce: Honey, dijon mustard, olive oil, red pepper flakes"
     ];
-    var getRecipe = function(){
+    var getRecipe = function () {
       // toggle class to show div on index.html which will display ul li of recipe obj
       return {
         grain: grain[Math.floor(Math.random() * grain.length)],
@@ -55,9 +55,10 @@
         sauce: sauce[Math.floor(Math.random() * sauce.length)]
       };
     };
-    this.spinBowl = function(){
-      this.recipeIsVisible = true
-      this.recipe = getRecipe()
-    };
+    this.spinBowl = function () {
+      window.setTimeout(function () {
+        this.recipeIsVisible = true;
+        this.recipe = getRecipe();
+    }, 2000);
   }
 // })();
