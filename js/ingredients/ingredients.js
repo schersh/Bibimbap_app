@@ -6,9 +6,3 @@
     "ngResource"
   ]);
 }());
-
-// $('button').click(function () {
-//
-//   $('#ricepic').toggleClass('spinner');
-//
-// });

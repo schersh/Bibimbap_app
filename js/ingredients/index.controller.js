@@ -55,12 +55,16 @@
         sauce: sauce[Math.floor(Math.random() * sauce.length)]
       };
     };
+    var activeSpinner = function(){
+      $('button').click(function () {
+        $('#ricepic').toggleClass('spinner');
+      });
+    };
+    // var deactiveSpinner =
     this.spinBowl = function(){
-      // toggle class to activate css transitions
-      // set timeout
-      // remove class
       this.recipeIsVisible = true
       this.recipe = getRecipe()
+      activeSpinner()
     };
   }
 // })();
