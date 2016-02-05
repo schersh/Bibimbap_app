@@ -57,8 +57,7 @@
     };
     this.spinBowl = function () {
       this.recipeIsVisible = true;
-      window.setTimeout(function () {
-        this.recipe = getRecipe();
-    }, 2000);
+      this.recipe = getRecipe();
+    };
   }
 // })();
