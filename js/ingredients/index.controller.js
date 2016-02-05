@@ -1,5 +1,9 @@
 "use strict";
 
+$('button').click(function () {
+  $('#ricepic').toggleClass('spinner');
+});
+
 // (function(){
   angular
   .module("ingredients")
@@ -55,16 +59,9 @@
         sauce: sauce[Math.floor(Math.random() * sauce.length)]
       };
     };
-    var activeSpinner = function(){
-      $('button').click(function () {
-        $('#ricepic').toggleClass('spinner');
-      });
-    };
-    // var deactiveSpinner =
     this.spinBowl = function(){
       this.recipeIsVisible = true
       this.recipe = getRecipe()
-      activeSpinner()
     };
   }
 // })();
