@@ -47,8 +47,10 @@
   </div>
   <script>
     $('button').click(function () {
-      $('#ricepic').toggleClass('spinner');
-      $('#ricepic').toggleClass('spinner');
+      $('#ricepic').addClass('spinner');
+      window.setTimeout(function () {
+        $('#ricepic').removeClass('spinner');
+      }, 2000);
     });
   </script>
 </body>

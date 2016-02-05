@@ -33,7 +33,7 @@
 }
 
 #ricepic.spinner {
-  animation: roll 1s 3;
+  animation: roll 1s 2;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
@@ -153,39 +153,6 @@ button {
   margin: 10px;
   font-size: 16px;
 }
-
-/*
-.image_down {
-  transition: all 0.5s ease;
-  background: url(text.png) no-repeat;
-  width:70%;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.image_left {
-    transition: all 0.5s ease;
-    background: url(text.png) no-repeat;
-    width:70%;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-.image_up {
-    background: url(text.png) no-repeat;
-    width:70%;
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    transform: rotate(270deg);
-}*/
-
 
 input, textarea {
   width: 20em;
